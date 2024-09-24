@@ -65,12 +65,12 @@ public static void securityIssues() {
 }
 
 public static void performanceIssues() {
-  StringBuilder sb = new StringBuilder();
+  String sb = "";
   // Inefficient string concatenation
   for (int i = 0; i < 1000; i++) {
-      sb.append("Iteration: ").append(i).append("\n");
+      sb = sb + "Iteration: " + i + "\n";
   }
-  System.out.println(sb.toString());
+  System.out.println(sb);
 }
 
 }
